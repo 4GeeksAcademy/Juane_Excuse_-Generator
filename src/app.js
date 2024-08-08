@@ -1,3 +1,6 @@
+import "bootstrap";
+import "./style.css";
+
 window.onload = function() {
   let who = ["The dog", "My grandma", "The mailman", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
@@ -10,17 +13,17 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  function getRandomLetters(array) {
+  function getRandomElements(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
 
   function generatorExcuses() {
-    const rdmWho = getRandomLetters(who);
-    const rdmAction = getRandomLetters(action);
-    const rdmWhat = getRandomLetters(what);
-    const rdmWhen = getRandomLetters(when);
+    const randomWho = getRandomElements(who);
+    const randomAction = getRandomElements(action);
+    const randomWhat = getRandomElements(what);
+    const rWhandomen = getRandomElements(when);
 
-    return `${rdmWho} ${rdmAction} ${rdmWhat} ${rdmWhen}`;
+    return `${randomWho} ${randomAction} ${randomWhat} ${rWhandomen}`;
   }
 
   // creating a sentence (the excuse)
